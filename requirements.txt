@@ -1,0 +1,6 @@
+streamlit
+xmltodict
+pdf2image
+Pillow
+google-generativeai
+groq
