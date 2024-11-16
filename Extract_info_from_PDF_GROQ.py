@@ -98,11 +98,14 @@ def main():
             st.write(column_names)
 
             # Step 2: Convert PDF to images
+            st.write("\n\n")
             st.write("Processing PDF...")
             images = pdf_to_images_in_memory(uploaded_pdf)
 
             # Step 3: Extract text from images using Groq and Llama Vision
-            st.write("Extracting text from PDF pages...")
+            st.write("\n\n")
+            st.write("Extracting text from PDF pages using Vision-Language Model for Document Understanding...")
+            st.write("\n\n")
             extracted_texts = process_images_with_groq(images)
 
             st.subheader("Extracted Text (from PDF):")
