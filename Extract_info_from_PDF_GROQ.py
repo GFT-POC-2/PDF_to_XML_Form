@@ -84,7 +84,7 @@ def process_images_with_groq(images):
 # Streamlit app
 def main():
     st.title("Vision-Language Document Processor")
-    st.write("Upload an XML file and a PDF file to extract structured data.")
+    st.write("Upload an XML file to specify target data fields, and a PDF for AI-driven extraction and structuring.")
 
     uploaded_xml = st.file_uploader("Upload XML File", type=["xml"])
     uploaded_pdf = st.file_uploader("Upload PDF File", type=["pdf"])
