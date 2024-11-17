@@ -55,7 +55,8 @@ def process_images_with_groq(images):
                     {
                         "role": "user",
                         "content": [
-                            {"type": "text", "text": "Extract all the text on this image and nothing else. Do not provide explanation or context."},
+                            #{"type": "text", "text": "Extract all the text on this form as well as provide context about boxes that have been checked. Make sure you extract everything from this application form including amounts and checked boxes"},
+                            {"type": "text", "text": "Analyze the content of the provided document thoroughly. Extract all information included in this document and conserve logical structure like a human would fill this form. Identify the fields to be filled and their relation to questions and checkboxes."},
                             {
                                 "type": "image_url",
                                 "image_url": {
@@ -66,6 +67,9 @@ def process_images_with_groq(images):
                     }
                 ],
                 model="llama-3.2-90b-vision-preview",
+                temperature=0.2,
+                max_tokens=1024,
+                top_p=0.8,
             )
 
             # Access the extracted text from the response
