@@ -1,9 +1,5 @@
 streamlit
 xmltodict
-pdf2image
+PyPDF2
 Pillow
 google-generativeai
-groq
-xml.etree.ElementTree
-collections
-os
