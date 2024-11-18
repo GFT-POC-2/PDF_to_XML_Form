@@ -4,3 +4,6 @@ pdf2image
 Pillow
 google-generativeai
 groq
+xml.etree.ElementTree
+collections
+os
